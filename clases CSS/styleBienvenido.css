@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+}
+
+.contenedorImagen {
+    text-align: center;
+}
+
+.logo {
+    box-sizing: border-box;
+    
+    
+    margin: auto;
+    width: 850px; 
+    height: 302px;
+    border: 0;
+    top: 500px;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    
+    top: 332px; 
+    left: 435px;
+
+    
+}
+
+
+
+.header {
+    box-sizing: border-box;
+    background-color: #FFFFFFFF;
+    padding: 50px;
+    height: 110px; 
+    display: flex; 
+    align-items: center;
+    font-family: 'Cabin'; /* Body */
+    font-size: 18px; 
+    opacity: 1; 
+    background: #FFFFFFFF;
+    margin-top: 50px;
+}
+
+/* Header menu item 1 */
+.acerca {
+    font-family: 'Cabin'; 
+    font-size: 40px; 
+    line-height: 56px; 
+    font-weight: 400; 
+    color: #565D6DFF; /* neutral-600 */
+    padding: 50px;
+    text-decoration: none;
+}
+/* Header menu item 2 */
+.ayuda{
+    font-family: 'Cabin'; 
+    font-size: 40px; 
+    line-height: 56px; 
+    font-weight: 400; 
+    color: #565D6DFF; /* neutral-600 */
+    padding: 60px;
+    text-decoration: none;
+}
+/* Header menu item 3 */
+.politicas{
+    font-family: 'Cabin'; 
+    font-size: 40px; 
+    line-height: 56px; 
+    font-weight: 400; 
+    color: #565D6DFF; /* neutral-600 */
+    padding: 50px;
+    text-decoration: none;
+}
+/* Header menu item 4 */
+.contactanos{
+    font-family: 'Cabin'; 
+    font-size: 40px; 
+    line-height: 56px; 
+    font-weight: 400; 
+    color: #565D6DFF; /* neutral-600 */
+    padding: 30px;
+    text-decoration: none;
+}
+
+
+/* Footer o botones */
+.footer {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 20px black;
+    font-family: 'Cabin';
+    
+    align-items: center;
+    
+    text-align: center;
+}
+
+.nuevo_usuario {
+    
+    width: 204px; 
+    height: 52px; 
+    padding: 10px 20px;
+    
+    align-items: center; 
+    justify-content: center; 
+    font-family: 'Cabin'; 
+    font-size: 24px; 
+    line-height: 36px; 
+    font-weight: 400; 
+    color: #FFFFFFFF; /* white */
+    background: #607B92FF; 
+    opacity: 1; 
+    border: none; 
+    border-radius: 6px; /* border-m */
+    box-shadow: 0px 4px 9px #171a1f1C, 0px 0px 2px #171a1f1F; /* shadow-m */
+    text-decoration: none;
+}
+
+.iniciar_sesion {
+    
+    
+    width: 189px; 
+    height: 52px; 
+    padding: 10px 20px; 
+    
+    align-items: center; 
+    justify-content: center; 
+    font-family: 'Cabin'; 
+    font-size: 24px; 
+    line-height: 36px; 
+    font-weight: 400; 
+    color: #607B92FF; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 6px; /* border-m */
+    border-width: 1px; 
+    border-color: #043A5BFF; 
+    border-style: solid; 
+    box-shadow: 0px 8px 17px #171a1f26, 0px 0px 2px #171a1f1F; /* shadow-l */
+    text-decoration: none;
+}

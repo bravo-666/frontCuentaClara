@@ -1,0 +1,18 @@
+<div class="bg-white p-6 rounded shadow-md w-full max-w-sm">
+  <h2 class="text-xl font-bold mb-4 text-center">Crear cuenta</h2>
+  <form method="POST" hx-post="{% url 'register' %}" hx-target="#register-container" hx-swap="innerHTML">
+    {% csrf_token %}
+    {% for field in form %}
+      <div class="mb-4">
+        {{ field.label_tag }} {{ field }}
+        {% if field.errors %}
+          <p class="text-sm text-red-500">{{ field.errors.0 }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+    <button class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600" type="submit">Registrar</button>
+  </form>
+  <p class="text-sm mt-4 text-center">
+    ¿Ya tienes cuenta? <a href="{% url 'login' %}" class="text-blue-500 hover:underline">Iniciar sesión</a>
+  </p>
+</div>
