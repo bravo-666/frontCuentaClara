@@ -1,0 +1,79 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
+    
+}
+
+.logo {
+    position: absolute; /* Posicionamiento preciso */
+    top: 30px;         /* Distancia desde arriba */
+    left: 60px;        /* Distancia desde la izquierda */
+    width: 145px;      /* Ancho ajustable */
+    height: auto;      /* Mantiene proporción */
+}
+
+.titulo {
+    position:absolute; /* Ajusta según sea necesario */
+    width: 1050px;
+    height: auto;
+    
+}
+
+h1 {
+    
+    box-sizing: border-box;
+    text-align: center;
+    top: 5px;
+    font-family: 'Cabin';
+    font-size: 50px;
+    border-radius: 5px;
+    color: #FFFFFFFF;
+    font-weight: 100;
+    background-color: #043A5BFF;
+}
+
+.migas {
+    position: absolute; 
+    top: 40px; 
+    right: 60px; 
+    font-family: Cabin; 
+    font-size: 24px; 
+    line-height: 36px; 
+    font-weight: 400; 
+    color: #2A2F8CFF;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    background:linear-gradient(180deg, #FAFAFBFF 0%, #DEE1E6FF 100%);
+    padding: 10px;
+    width: 1415px; 
+    height: 500px; 
+    margin: 150px auto;
+    border: 1px solid;
+    font-family: 'Cabin';
+    border-radius: 10px;
+    border-color: #dbdee5;
+    box-shadow: 0px 4px 9px #171a1f1C, 0px 0px 2px #171a1f1F;
+}
+
+h2 {
+    font-family: 'Cabin';
+    font-size: 24px;
+    text-align: left;
+    margin-top: 20px;
+    color: #607B92FF;
+}
+
+p {
+    font-family: 'Cabin';
+    font-size: 22px;
+    text-align: left;
+    
+}
