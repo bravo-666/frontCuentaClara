@@ -48,7 +48,7 @@ h1 {
 .migas {
     position: static;
     top: 20px;
-    right: 400px;
+    right: 20px;
     font-family: 'Cabin', sans-serif;
     font-size: 16px;
     color: #2A2F8C;
@@ -63,7 +63,7 @@ h1 {
     text-align: center;
     background: linear-gradient(180deg, #FAFAFB 0%, #DEE1E6 100%);
     padding: 20px;
-    width: 90%;
+    width: 97%;
     max-width: 1200px;
     min-height: 300px;
     margin: 20px auto;
