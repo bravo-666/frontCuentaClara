@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Mesas</title>
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../clases CSS/styleMesas.css">
+    
 
-    <body>
-        <a href="menu.html">Menú</a>
-        <a href="mesas.html">Mesas</a>
-        <a href="cuentas.html">Cuentas</a>
-        <a href="corte.html">Corte</a>
-    </body>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesas - Cuenta Clara</title>
+    <!-- Fuente de iconos de respaldo (se usará si no cargan tus imágenes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Checkbox invisible para controlar el menú -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+    <!-- Botón hamburguesa - siempre visible -->
+    <label for="menu-toggle" class="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- Menú lateral -->
+    <nav class="sidebar">
+        <ul class="menu-list">
+            <!-- Cada item tiene su propia clase y estructura accesible -->
+            <li class="menu-item">
+                <a href="..\../clases HTML/menu.html" class="menu-link">
+                    <i class="fas fa-utensils fallback-icon"></i>
+                    <span class="menu-label">Menú</span>
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="..\../clases HTML/mesas.html" class="menu-link">
+                    <i class="fas fa-chair fallback-icon"></i>
+                    <span class="menu-label">Mesas</span>
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="..\../clases HTML/cuentas.html" class="menu-link">
+                    <i class="fas fa-receipt fallback-icon"></i>
+                    <span class="menu-label">Cuentas</span>
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="..\../clases HTML/corte.html" class="menu-link">
+                    <i class="fas fa-cut fallback-icon"></i>
+                    <span class="menu-label">Corte</span>
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="..\../clases HTML/Ajustes/ajustes.html" class="menu-link">
+                    <i class="fas fa-cog fallback-icon"></i>
+                    <span class="menu-label">Ajustes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="content">
+        <h1>Sistema de Restaurante</h1>
+        <p>Menú lateral contraíble con iconos personalizados.</p>
+    </main>
+</body>
 </html>

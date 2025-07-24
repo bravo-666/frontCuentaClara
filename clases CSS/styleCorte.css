@@ -112,7 +112,6 @@ body {
 }
 
 
-
 /* Texto de los items */
 .menu-label {
     transition: 
@@ -142,7 +141,6 @@ body {
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
-
     
     /* Oscurecer contenido cuando el menú está abierto */
     .menu-toggle:checked ~ .content {
