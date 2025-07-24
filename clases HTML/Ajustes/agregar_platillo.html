@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agregar Platillo - Cuenta Clara</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="..\../clases CSS/Ajustes/styleAgregarPlatillo.css">
+    </head>
+
+    <body>
+        <div class="box-card">
+            <div class="title">
+                <h2>Agregar un platillo</h2>
+            </div>
+            <div class="card">
+                <input type="text" class="card-input" id="platillo-nombre" placeholder="Nombre del Platillo" required>
+                <input type="text" class="card-input" id="platillo-precio" placeholder="Precio del Platillo" required>
+                <p>Agrefa los ingredientres (opcionales) del platillo</p>
+            </div>
+        
+            <form>
+            <!-- 
+                Campos del formulario 
+                - El primer campo siempre visible
+                - Los siguientes campos se muestran automáticamente
+                cuando el anterior tiene contenido
+            -->
+            
+            <!-- Campo 1 (siempre visible) -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Ingrediente 1" required>
+            </div>
+            
+            <!-- Campo 2 (oculto inicialmente) -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Ingrediente 2">
+            </div>
+            
+            <!-- Campo 3 (oculto inicialmente) -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Ingrediente 3">
+            </div>
+            
+            <!-- Campo 4 (oculto inicialmente) -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Ingrediente 4">
+            </div>
+            
+            <!-- Campo 5 (oculto inicialmente) -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Ingrediente 5">
+            </div>
+
+            <!-- Campo 5 (oculto inicialmente) -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Ingrediente 6">
+            </div>
+
+            <!-- Campo 5 (oculto inicialmente) -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Ingrediente 7">
+            </div>
+
+            <!-- Campo 5 (oculto inicialmente) -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Ingrediente 8">
+            </div>
+
+            <!-- Campo 5 (oculto inicialmente) -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Ingrediente 9">
+            </div>
+            
+            <!-- Botón de envío del formulario -->
+            <button type="submit" class="cancelar-btn">Cancelar</button>
+            <button type="submit" class="guardar-btn">Guardar</button>
+            </form>
+        </div>
+    </body>
+</html>

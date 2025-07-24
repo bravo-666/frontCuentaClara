@@ -41,12 +41,13 @@ header {
     position: fixed;
     top: 20px;
     right: 60px;
+    font-family: 'Cabin', sans-serif;
     font-size: 16px;
-    color: var(--primary-color);
-    background: var(--white);
+    color: #2A2F8C;
+    background: white;
     padding: 8px 15px;
     border-radius: 5px;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* ========== MAIN LAYOUT ========== */
