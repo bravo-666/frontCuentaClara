@@ -1,0 +1,254 @@
+/* Variables CSS para fácil personalización */
+:root {
+    /* Colores */
+    --main-bg: #f5f5f5;
+    --hover-bg: #607B92FF;
+    --text-color: #2c3e50;
+    --content-bg: #f5f5f5;
+    
+    /* Dimensiones */
+    --sidebar-expanded: 200px;
+    --sidebar-collapsed: 70px;
+    --icon-size: 24px;
+    
+    /* Transiciones */
+    --transition-speed: 0.3s;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: var(--content-bg);
+    transition: margin-left var(--transition-speed);
+    min-height: 100vh;
+    
+}
+
+/* Ocultar checkbox que controla el menú */
+.menu-toggle {
+    display: none;
+}
+
+/* Botón del menú hamburguesa */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    font-size: var(--icon-size);
+    cursor: pointer;
+    z-index: 1000;
+    background: var(--main-bg);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 10%;
+    transition: var(--transition-speed);
+}
+
+.menu-button:hover {
+    background: var(--hover-bg);
+    
+}
+
+/* Menú lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--sidebar-expanded);
+    background-color: var(--main-bg);
+    transition: width var(--transition-speed);
+    padding-top: 80px;
+    z-index: 999;
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estado contraído del menú */
+.menu-toggle:not(:checked) ~ .sidebar {
+    width: var(--sidebar-collapsed);
+}
+
+/* Lista de items del menú */
+.menu-list {
+    list-style-type: none;
+}
+
+/* Items individuales del menú */
+
+.menu-item {
+    padding: 18px 20px;
+    transition: var(--transition-speed);
+    white-space: nowrap;
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Enlaces del menú */
+.menu-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Contenedor de iconos */
+.menu-icon, .fallback-icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+
+
+/* Texto de los items */
+.menu-label {
+    transition: 
+        opacity var(--transition-speed), 
+        visibility var(--transition-speed);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar texto cuando el menú está contraído */
+.menu-toggle:not(:checked) ~ .sidebar .menu-label {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Contenido principal */
+.content {
+    margin-left: var(--sidebar-expanded);
+    padding: 20px;
+    transition: margin-left var(--transition-speed);
+}
+
+/* Ajustar contenido cuando el menú está contraído */
+.menu-toggle:not(:checked) ~ .content {
+    margin-left: var(--sidebar-collapsed);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+    
+    /* Oscurecer contenido cuando el menú está abierto */
+    .menu-toggle:checked ~ .content {
+        margin-left: var(--sidebar-collapsed);
+        margin-right: 250px; /* Mantén el mismo margen derecho */
+    }
+    
+    /* Asegurar que el botón esté sobre el menú */
+    .menu-button {
+        z-index: 1001;
+    }
+}
+/*--------------------------------------------------------------------------------------------- */
+
+.content {
+    margin-left: var(--sidebar-expanded);
+    margin-right: 260px; /* Añade este margen derecho igual al ancho del panel */
+    padding: 20px;
+    transition: margin-left var(--transition-speed);
+
+}
+
+/* Tarjeta de título */
+.title-card {
+    font-family: 'Cabin', sans-serif;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #043A5B;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    color: white;                   /* Color de texto oscuro */
+    text-align: center;                /* Centrado del texto */
+    
+}
+
+/*estilos de la tarjeta de perfil */
+.profile-image {
+    width: 100px;                     /* Ancho de la imagen */
+    height: 100px;                    /* Alto de la imagen */
+    padding: 10%;
+    object-fit: cover;                /* Ajusta la imagen para cubrir el área */
+    border: 2px solid #043A5B; /* Borde azul */
+}
+
+/* Enlaces de configuración */
+.settings-links {
+    display: flex;
+    flex-direction: column;           /* Coloca los enlaces en una columna */
+    align-items: left;              /* Centra los enlaces horizontalmente */
+    margin-top: 20px;                 /* Espacio superior */
+}
+
+/* Estilos de los botones de los enlaces */
+.settings-btm {
+    font-style: bold;
+    width: 30%;                       /* Ancho completo */
+    background-color: #607B92FF;               /* Color azul */
+    color: white;                      /* Texto blanco */
+    border: none;                      /* Sin borde */
+    padding: 0.8rem;                   /* Espaciado interno */
+    border-radius: 5px;                /* Bordes redondeados */
+    font-size: 1rem;                   /* Tamaño de fuente */
+    margin-top: 1rem;                  /* Espaciado superior */
+    cursor: pointer;                   /* Cursor tipo pointer */
+    transition: background 0.2s;       /* Transición de color */
+    text-decoration: none;
+}
+
+/* Efecto hover del botón */
+.settings-btm:hover {
+    background-color: #043A5BFF;              /* Color azul más oscuro */
+}
+
+/*--------------------------------------------------------------------------------------------- */
+
+/* Estilos para el panel derecho */
+
+/* Panel derecho */
+.right-panel {
+    width: 260px;
+    background-color: #f5f5f5;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1; /* Puedes reducirlo a 0 si no hay elementos superpuestos */
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Elimina cualquier propiedad que pueda causar superposición */
+}
+
+/* Contenido del panel derecho */
+.right-panel-content {
+    padding: 20px; /* Espaciado interno */
+    height: 100%; /* Altura completa del panel */
+    overflow-y: auto; /* Desplazamiento vertical si es necesario */
+}
+
+h2 {
+    font-size: 32px;
+    color: white;                   /* Color de texto oscuro */
+    text-align: center;                /* Centrado del texto */
+}
