@@ -16,9 +16,10 @@
                 <h2>Agregar un platillo</h2>
             </div>
             <div class="card">
+                <label for="platillo-nombre">Datos de platillo: </label>
                 <input type="text" class="card-input" id="platillo-nombre" placeholder="Nombre del Platillo" required>
                 <input type="text" class="card-input" id="platillo-precio" placeholder="Precio del Platillo" required>
-                <p>Agrefa los ingredientres (opcionales) del platillo</p>
+                <p>Agrega los ingredientres (opcionales) del platillo:</p>
             </div>
         
             <form>
@@ -75,8 +76,12 @@
             </div>
             
             <!-- Botón de envío del formulario -->
-            <button type="submit" class="cancelar-btn">Cancelar</button>
-            <button type="submit" class="guardar-btn" >Guardar</button>
+            
+            <div class="botones-container">
+                <button class="guardar-btn">Guardar</button>
+                <a href="editar_menu.html" class="guardar-btn cancelar-btn">Cancelar</a>
+            </div>
+            
             </form>
         </div>
     </body>
