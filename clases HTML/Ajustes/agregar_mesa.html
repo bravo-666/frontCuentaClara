@@ -53,11 +53,23 @@
 
             <!-- Botón de envío del formulario -->
         <div class="botones-container">
-            <button class="guardar-btn">Guardar</button>
+            <label for="mostrar-mensaje" roll="button" class="guardar-btn">Guardar</label>  <!-- Checkbox que controla la visibilidad del mensaje de confirmación //copiar-->
             <a href="editar_menu.html" class="guardar-btn cancelar-btn">Cancelar</a>
         </div>
 
         </form>
+
+        <!-- Checkbox invisible para controlar la visibilidad del mensaje de confirmación -->
+    <input type="checkbox" id="mostrar-mensaje" class="mensaje-checkbox">
+
+    <!-- Mensaje de confirmación que aparece al guardar -->
+    <div class="mensaje-confirmacion">
+        <div class="mensaje-contenido">
+            <p>Datos guardados.</p>
+            <!-- El label actúa como botón OK para cerrar el mensaje -->
+            <a href="agregar_platillo.html" class="ok-btm">Ok</a>
+        </div>
+    </div>
 
     </body> 
 </html>

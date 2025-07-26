@@ -109,3 +109,99 @@ h2 {
 .cancelar-btn:hover {
     background-color: #bb2d3b;
 }
+
+/* Checkbox invisible para controlar la visibilidad del mensaje ---------------------------------------*/
+.mensaje-checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/* Mensaje de confirmación (oculto por defecto) */
+.mensaje-confirmacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Mostrar mensaje cuando el checkbox está activado */
+.mensaje-checkbox:checked ~ .mensaje-confirmacion {
+    display: flex;
+}
+
+/* Contenido del mensaje de confirmación */
+.mensaje-contenido {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+}
+
+/* Texto del mensaje de confirmación */
+.mensaje-contenido p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Enlace con estilo de botón */
+.ok-btm {
+    /* Mantenemos los mismos estilos visuales del botón */
+    background-color: #607B92FF;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    /* Propiedades específicas para enlaces */
+    display: inline-block;  /* Permite padding y dimensiones como un botón */
+    text-decoration: none; /* Elimina el subrayado típico de los enlaces */
+    text-align: center;    /* Centra el texto como un botón */
+    
+    /* Transición suave */
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto hover (igual que el botón) */
+.ok-btm:hover {
+    background-color: #043A5BFF;      /* Cambia el fondo al azul oscuro */
+    color: white;                     /* Mantiene el texto blanco */
+    text-decoration: none;            /* Previene subrayado en hover */
+}
+
+/* 
+ * Diseño responsivo para pantallas pequeñas
+ * Ajusta el tamaño y espaciado de los elementos principales
+ */
+@media (max-width: 768px) {
+    .box-card {
+        min-width: 80vw;              /* El ancho mínimo de la tarjeta aumenta */
+        padding: 30px;                /* Menos padding para pantallas pequeñas */
+    }
+    
+    .title {
+        width: 80%;                   /* El título ocupa más ancho */
+    }
+    
+    .colores-disponibles div {
+        flex-wrap: wrap;              /* Los colores se acomodan en varias líneas */
+        gap: 10px;                    /* Espacio entre colores */
+    }
+    
+    .mensaje-contenido {
+        padding: 20px;                /* Menos padding en el mensaje */
+        max-width: 90%;               /* El mensaje puede ser más ancho */
+    }
+}
